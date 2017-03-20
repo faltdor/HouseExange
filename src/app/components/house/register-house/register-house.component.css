@@ -1,0 +1,27 @@
+.container{
+	padding-top: 100px;
+}
+
+.btn.btn-success.addBtn{
+  margin-top: 25px;
+}
+
+.sebm-google-map-container {
+  height: 300px;
+}
+
+
+.map{
+	padding: 5px;
+	border:1px #ccc solid;
+}
+
+/*valid and required show green
+.ng-valid[required] {
+  border-left: 5px solid #42A948; /* green 
+}
+
+/*invalid
+.ng-invalid {
+  border-left: 5px solid #a94442; /* red 
+}*/

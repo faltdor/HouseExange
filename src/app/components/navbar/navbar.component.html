@@ -10,14 +10,24 @@
           <a class="navbar-brand" href="#">Exchange Houses</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-        	<ul class="nav navbar-nav ">  
-                 <li ng-class="{active: stateis('app.favorites')}"><a class="btn " [routerLink]="['/home']">
-                 <i class="fa fa-heart-o"></i> Home</a></li>
-                 <li ng-class="{active: stateis('app.contactus')}"><a class="btn " [routerLink]="['/registerHouse']">
-                 <i class="fa fa-envelope-o"></i> Register House</a></li>
-            </ul>
+        	<ul class="nav navbar-nav navbar-right">  
+                 <li ng-class="{active: stateis('app.favorites')}">
+                    <a class="btn " [routerLink]="['/home']">
+                      <i class="fa fa-heart-o"></i> Home
+                    </a>
+                  </li>
+                 <li ng-class="{active: stateis('app.contactus')}">
+                    <a class="btn " [routerLink]="['/houses']">
+                      <i class="fa fa-envelope-o"></i> Houses 
+                    </a>
+                </li>
+                 <li ng-class="{active: stateis('app.contactus')}">
+                    <a class="btn " [routerLink]="['/registerHouse']">
+                    <i class="fa fa-envelope-o"></i> Register House
+                    </a>
+                </li>           
 
-         	 <ul class="nav navbar-nav navbar-right">
+         	 
                 <li ng-if="!loggedIn"><a class="btn " [routerLink]="['/login']">
                 <span class="glyphicon glyphicon-log-in"></span> Login</a>
                 </li>
